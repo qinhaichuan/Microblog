@@ -8,20 +8,24 @@
 
 /* Begin PBXBuildFile section */
 		F89997631D0AB8DA002A65E0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F89997621D0AB8DA002A65E0 /* AppDelegate.swift */; };
-		F89997651D0AB8DA002A65E0 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F89997641D0AB8DA002A65E0 /* ViewController.swift */; };
-		F89997681D0AB8DA002A65E0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F89997661D0AB8DA002A65E0 /* Main.storyboard */; };
 		F899976A1D0AB8DA002A65E0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F89997691D0AB8DA002A65E0 /* Assets.xcassets */; };
-		F899976D1D0AB8DA002A65E0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F899976B1D0AB8DA002A65E0 /* LaunchScreen.storyboard */; };
+		F899977E1D0AC212002A65E0 /* HomeTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F899977D1D0AC212002A65E0 /* HomeTableViewController.swift */; };
+		F89997801D0AC21E002A65E0 /* DiscoverTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F899977F1D0AC21E002A65E0 /* DiscoverTableViewController.swift */; };
+		F89997821D0AC22A002A65E0 /* MessageTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F89997811D0AC22A002A65E0 /* MessageTableViewController.swift */; };
+		F89997841D0AC239002A65E0 /* ProfileTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F89997831D0AC239002A65E0 /* ProfileTableViewController.swift */; };
+		F89997881D0AC579002A65E0 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F89997871D0AC579002A65E0 /* MainViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		F899975F1D0AB8DA002A65E0 /* microblog.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = microblog.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F89997621D0AB8DA002A65E0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		F89997641D0AB8DA002A65E0 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		F89997671D0AB8DA002A65E0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		F89997691D0AB8DA002A65E0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		F899976C1D0AB8DA002A65E0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F899976E1D0AB8DA002A65E0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F899977D1D0AC212002A65E0 /* HomeTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeTableViewController.swift; sourceTree = "<group>"; };
+		F899977F1D0AC21E002A65E0 /* DiscoverTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DiscoverTableViewController.swift; sourceTree = "<group>"; };
+		F89997811D0AC22A002A65E0 /* MessageTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MessageTableViewController.swift; sourceTree = "<group>"; };
+		F89997831D0AC239002A65E0 /* ProfileTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileTableViewController.swift; sourceTree = "<group>"; };
+		F89997871D0AC579002A65E0 /* MainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,14 +58,72 @@
 		F89997611D0AB8DA002A65E0 /* microblog */ = {
 			isa = PBXGroup;
 			children = (
+				F89997741D0AC1C2002A65E0 /* Classes */,
 				F89997621D0AB8DA002A65E0 /* AppDelegate.swift */,
-				F89997641D0AB8DA002A65E0 /* ViewController.swift */,
-				F89997661D0AB8DA002A65E0 /* Main.storyboard */,
 				F89997691D0AB8DA002A65E0 /* Assets.xcassets */,
-				F899976B1D0AB8DA002A65E0 /* LaunchScreen.storyboard */,
 				F899976E1D0AB8DA002A65E0 /* Info.plist */,
 			);
 			path = microblog;
+			sourceTree = "<group>";
+		};
+		F89997741D0AC1C2002A65E0 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				F89997771D0AC1C2002A65E0 /* Main */,
+				F89997761D0AC1C2002A65E0 /* Home */,
+				F89997751D0AC1C2002A65E0 /* Discover */,
+				F89997781D0AC1C2002A65E0 /* Message */,
+				F89997791D0AC1C2002A65E0 /* Profile */,
+				F899977A1D0AC1C2002A65E0 /* Tools */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		F89997751D0AC1C2002A65E0 /* Discover */ = {
+			isa = PBXGroup;
+			children = (
+				F899977F1D0AC21E002A65E0 /* DiscoverTableViewController.swift */,
+			);
+			path = Discover;
+			sourceTree = "<group>";
+		};
+		F89997761D0AC1C2002A65E0 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				F899977D1D0AC212002A65E0 /* HomeTableViewController.swift */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		F89997771D0AC1C2002A65E0 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				F89997871D0AC579002A65E0 /* MainViewController.swift */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		F89997781D0AC1C2002A65E0 /* Message */ = {
+			isa = PBXGroup;
+			children = (
+				F89997811D0AC22A002A65E0 /* MessageTableViewController.swift */,
+			);
+			path = Message;
+			sourceTree = "<group>";
+		};
+		F89997791D0AC1C2002A65E0 /* Profile */ = {
+			isa = PBXGroup;
+			children = (
+				F89997831D0AC239002A65E0 /* ProfileTableViewController.swift */,
+			);
+			path = Profile;
+			sourceTree = "<group>";
+		};
+		F899977A1D0AC1C2002A65E0 /* Tools */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Tools;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -123,9 +185,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F899976D1D0AB8DA002A65E0 /* LaunchScreen.storyboard in Resources */,
 				F899976A1D0AB8DA002A65E0 /* Assets.xcassets in Resources */,
-				F89997681D0AB8DA002A65E0 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -136,31 +196,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F89997651D0AB8DA002A65E0 /* ViewController.swift in Sources */,
+				F89997841D0AC239002A65E0 /* ProfileTableViewController.swift in Sources */,
+				F899977E1D0AC212002A65E0 /* HomeTableViewController.swift in Sources */,
 				F89997631D0AB8DA002A65E0 /* AppDelegate.swift in Sources */,
+				F89997881D0AC579002A65E0 /* MainViewController.swift in Sources */,
+				F89997821D0AC22A002A65E0 /* MessageTableViewController.swift in Sources */,
+				F89997801D0AC21E002A65E0 /* DiscoverTableViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXVariantGroup section */
-		F89997661D0AB8DA002A65E0 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				F89997671D0AB8DA002A65E0 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		F899976B1D0AB8DA002A65E0 /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				F899976C1D0AB8DA002A65E0 /* Base */,
-			);
-			name = LaunchScreen.storyboard;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		F899976F1D0AB8DA002A65E0 /* Debug */ = {
@@ -252,7 +297,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = "Brand Assets";
 				INFOPLIST_FILE = microblog/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = QHC.microblog;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -263,7 +310,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = "Brand Assets";
 				INFOPLIST_FILE = microblog/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = QHC.microblog;
 				PRODUCT_NAME = "$(TARGET_NAME)";
