@@ -16,11 +16,15 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
 
+        UITabBar.appearance().tintColor = UIColor.orangeColor()
+        
+       
         window = UIWindow(frame: UIScreen.mainScreen().bounds)
         window?.backgroundColor = UIColor.whiteColor()
         window?.rootViewController = MainViewController()
         window?.makeKeyAndVisible()
-        
+ 
+ 
         return true
     }
 
@@ -46,6 +50,12 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
     }
 
-
 }
+
+func QHCLog<T>(message: T, method: String = #function, line: Int = #line) {
+    #if DEBUG
+    print("\(method)[\(line)]: ====== \(message)")
+    #endif
+}
+
 
