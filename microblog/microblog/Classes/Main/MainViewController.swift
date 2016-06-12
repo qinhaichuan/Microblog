@@ -10,13 +10,35 @@ import UIKit
 
 class MainViewController: UITabBarController {
 
+    // MARK: -----  懒加载
+    private lazy var customBtn: UIButton = {
+        
+        let btn = UIButton(imageName: "tabbar_compose_icon_add", backgroundImageName: "tabbar_compose_button")
+        btn.addTarget(self, action: #selector(MainViewController.customBtnClick), forControlEvents: UIControlEvents.TouchUpInside)
+        
+        return btn
+    }()
+    
+    // MARK: -----  生命周期方法
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        addChildViewControllers()
+//        addChildViewControllers()
     
     }
     
+    // storyboard方式添加button
+    override func viewWillAppear(animated: Bool) {
+        super.viewWillAppear(animated)
+        
+        tabBar.addSubview(customBtn)
+        let width = tabBar.bounds.width / CGFloat(childViewControllers.count)
+        let height = customBtn.bounds.height
+        let btnRect = CGRectMake(0, 0, width, height)
+        customBtn.frame = CGRectOffset(btnRect, 2 * width, 0)
+    }
+    
+    // MARK: -----  添加子控件(代码方式)
     func addChildViewControllers() {
         
         let path = NSBundle.mainBundle().pathForResource("MainVCSettings.json", ofType: nil)!
@@ -64,6 +86,12 @@ class MainViewController: UITabBarController {
         let nav = UINavigationController(rootViewController: customVc)
         addChildViewController(nav)
         
+    }
+    
+    // MARK: -----  加号按钮点击
+    @objc private func customBtnClick() {
+    
+        QHCLog("点击了加号按钮")
     }
     
 

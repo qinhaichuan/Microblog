@@ -20,7 +20,9 @@
 		F89997B31D0C3585002A65E0 /* Message.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F89997B21D0C3585002A65E0 /* Message.storyboard */; };
 		F89997B51D0C3594002A65E0 /* Profile.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F89997B41D0C3594002A65E0 /* Profile.storyboard */; };
 		F89C08891D0C3DB400CD47B7 /* MainVCSettings.json in Resources */ = {isa = PBXBuildFile; fileRef = F89C08871D0C3DB400CD47B7 /* MainVCSettings.json */; };
-		F89C088A1D0C3DB400CD47B7 /* NullViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F89C08881D0C3DB400CD47B7 /* NullViewController.swift */; };
+		F89C088C1D0D623100CD47B7 /* Null.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F89C088B1D0D623100CD47B7 /* Null.storyboard */; };
+		F89C088E1D0D62F200CD47B7 /* NullViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F89C088D1D0D62F200CD47B7 /* NullViewController.swift */; };
+		F89C08901D0D752800CD47B7 /* UIButton+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = F89C088F1D0D752800CD47B7 /* UIButton+Extension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -39,7 +41,9 @@
 		F89997B21D0C3585002A65E0 /* Message.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Message.storyboard; path = ../Main/Message.storyboard; sourceTree = "<group>"; };
 		F89997B41D0C3594002A65E0 /* Profile.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Profile.storyboard; path = ../Main/Profile.storyboard; sourceTree = "<group>"; };
 		F89C08871D0C3DB400CD47B7 /* MainVCSettings.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = MainVCSettings.json; sourceTree = "<group>"; };
-		F89C08881D0C3DB400CD47B7 /* NullViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NullViewController.swift; sourceTree = "<group>"; };
+		F89C088B1D0D623100CD47B7 /* Null.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Null.storyboard; sourceTree = "<group>"; };
+		F89C088D1D0D62F200CD47B7 /* NullViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NullViewController.swift; sourceTree = "<group>"; };
+		F89C088F1D0D752800CD47B7 /* UIButton+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIButton+Extension.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -142,6 +146,7 @@
 		F899977A1D0AC1C2002A65E0 /* Tools */ = {
 			isa = PBXGroup;
 			children = (
+				F89C088F1D0D752800CD47B7 /* UIButton+Extension.swift */,
 			);
 			path = Tools;
 			sourceTree = "<group>";
@@ -150,7 +155,8 @@
 			isa = PBXGroup;
 			children = (
 				F89C08871D0C3DB400CD47B7 /* MainVCSettings.json */,
-				F89C08881D0C3DB400CD47B7 /* NullViewController.swift */,
+				F89C088D1D0D62F200CD47B7 /* NullViewController.swift */,
+				F89C088B1D0D623100CD47B7 /* Null.storyboard */,
 			);
 			path = Resource;
 			sourceTree = "<group>";
@@ -215,6 +221,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F89997B51D0C3594002A65E0 /* Profile.storyboard in Resources */,
+				F89C088C1D0D623100CD47B7 /* Null.storyboard in Resources */,
 				F89997AF1D0C355F002A65E0 /* Home.storyboard in Resources */,
 				F89C08891D0C3DB400CD47B7 /* MainVCSettings.json in Resources */,
 				F89997B11D0C3573002A65E0 /* Discover.storyboard in Resources */,
@@ -236,8 +243,9 @@
 				F89997631D0AB8DA002A65E0 /* AppDelegate.swift in Sources */,
 				F89997881D0AC579002A65E0 /* MainViewController.swift in Sources */,
 				F89997821D0AC22A002A65E0 /* MessageTableViewController.swift in Sources */,
+				F89C08901D0D752800CD47B7 /* UIButton+Extension.swift in Sources */,
 				F89997801D0AC21E002A65E0 /* DiscoverTableViewController.swift in Sources */,
-				F89C088A1D0C3DB400CD47B7 /* NullViewController.swift in Sources */,
+				F89C088E1D0D62F200CD47B7 /* NullViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
