@@ -8,12 +8,16 @@
 
 import UIKit
 
+ /// 设置展现view
+
 class TitlePresentationController: UIPresentationController {
 
+    var customeFrame = CGRectZero
+    
     private lazy var maskView: UIView = {
         
         let maskV = UIView()
-        maskV.backgroundColor = UIColor(white: 0.7, alpha: 0.7)
+        maskV.backgroundColor = UIColor(white: 0.7, alpha: 0.5)
         
         let tapGesture = UITapGestureRecognizer(target: self, action: #selector(TitlePresentationController.dismissClick))
         maskV.addGestureRecognizer(tapGesture)
@@ -32,7 +36,7 @@ class TitlePresentationController: UIPresentationController {
         containerView?.insertSubview(maskView, atIndex: 0)
         maskView.frame = containerView!.bounds
         
-        presentedView()?.frame = CGRect(x: 130, y: 50, width: 150, height: 200)
+        presentedView()?.frame = customeFrame 
         
         
     }

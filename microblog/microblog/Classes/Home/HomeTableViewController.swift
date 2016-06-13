@@ -8,25 +8,28 @@
 
 import UIKit
 
-// 添加分类, 重写model方法
-extension HomeTableViewController: UIViewControllerTransitioningDelegate
-{
-    /**
-     告诉系统谁来负责自定义转场
-     
-     - parameter presented:  被model出来的控制器
-     - parameter presenting: 发现model的控制器
-     */
-    func presentationControllerForPresentedViewController(presented: UIViewController, presentingViewController presenting: UIViewController, sourceViewController source: UIViewController) -> UIPresentationController? {
-        return TitlePresentationController(presentedViewController: presented, presentingViewController: presenting)
-    }
-
-}
-
-// MARK: -----
-
 class HomeTableViewController: CommonTableViewController {
 
+    // MARK: -----  Lazy Load
+    private lazy var titleBtn: TitleButton = {
+        
+        // 标题view
+        let btn = TitleButton()
+        btn.addTarget(self, action: "titleViewClick:", forControlEvents: UIControlEvents.TouchUpInside)
+        
+        return btn
+    }()
+    
+    private lazy var presentedController: PresentationController = {
+        
+        let presentCon = PresentationController()
+        presentCon.customFrame = CGRect(x: 120, y: 50, width: 120, height: 200)
+    
+        return presentCon
+    }()
+    
+    
+    
     // MARK: -----  生命周期方法 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -37,6 +40,9 @@ class HomeTableViewController: CommonTableViewController {
         
         addBarButtonItem()
         
+        // 注册通知
+        NSNotificationCenter.defaultCenter().addObserver(self, selector: #selector(HomeTableViewController.titleBtnClick), name: QHCPOPVIEWCONTROLLERDISMISSCLISK, object: self)
+        NSNotificationCenter.defaultCenter().addObserver(self, selector: #selector(HomeTableViewController.titleBtnClick), name: QHCPOPVIEWCONTROLLERDISMISSCLISK, object: self)
         
     }
     
@@ -44,11 +50,9 @@ class HomeTableViewController: CommonTableViewController {
     {
         navigationItem.leftBarButtonItem = UIBarButtonItem.init(imageName: "navigationbar_friendattention", target: self, action: #selector(HomeTableViewController.leftClick))
         navigationItem.rightBarButtonItem = UIBarButtonItem.init(imageName: "navigationbar_pop", target: self, action: #selector(HomeTableViewController.rightClick))
-    
-        // 标题view
-        let btn = TitleButton()
-        btn.addTarget(self, action: "titleViewClick:", forControlEvents: UIControlEvents.TouchUpInside)
-        navigationItem.titleView = btn
+        
+        navigationItem.titleView = titleBtn
+
     }
 
     
@@ -72,12 +76,18 @@ class HomeTableViewController: CommonTableViewController {
         let storyBoard = UIStoryboard(name: "PopViewController", bundle: nil)
         let popViewCon = storyBoard.instantiateInitialViewController()!
         
-        popViewCon.transitioningDelegate = self
+        popViewCon.transitioningDelegate = presentedController
         popViewCon.modalPresentationStyle = UIModalPresentationStyle.Custom
         
         presentViewController(popViewCon, animated: true, completion: nil)
         
     }
+    
+    @objc private func titleBtnClick()
+    {
+        titleBtn.selected = !titleBtn.selected
+    }
+    
     
     
 }
