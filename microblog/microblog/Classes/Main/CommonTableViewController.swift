@@ -10,7 +10,8 @@ import UIKit
 
 class CommonTableViewController: UITableViewController {
     
-    var isLogin: Bool = false
+    // 如果已经登录就显示登录后页面
+    var isLogin: Bool = true
     var visitorView: VisitorView?
 
     override func loadView() {
@@ -20,6 +21,12 @@ class CommonTableViewController: UITableViewController {
 
     }
     
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        
+    }
+    
+    // MARK: -----  add subviews
     func setupVisitorView() {
         
         visitorView = VisitorView.visitorView()
@@ -32,15 +39,7 @@ class CommonTableViewController: UITableViewController {
         navigationItem.rightBarButtonItem = UIBarButtonItem(title: "注册", style: UIBarButtonItemStyle.Plain, target: self, action: #selector(CommonTableViewController.registerClick))
         
     }
-    
-    
-    
-    
-    override func viewDidLoad() {
-        super.viewDidLoad()
 
-    
-    }
 
     // MARK: -----  点击
     @objc private func loginClick()
