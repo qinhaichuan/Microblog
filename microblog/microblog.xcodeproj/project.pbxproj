@@ -23,6 +23,9 @@
 		F89C088C1D0D623100CD47B7 /* Null.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F89C088B1D0D623100CD47B7 /* Null.storyboard */; };
 		F89C088E1D0D62F200CD47B7 /* NullViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F89C088D1D0D62F200CD47B7 /* NullViewController.swift */; };
 		F89C08901D0D752800CD47B7 /* UIButton+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = F89C088F1D0D752800CD47B7 /* UIButton+Extension.swift */; };
+		F89C08931D0E3BAE00CD47B7 /* CommonTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F89C08911D0E3BAE00CD47B7 /* CommonTableViewController.swift */; };
+		F89C08961D0E3DF300CD47B7 /* VisitorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F89C08951D0E3DF300CD47B7 /* VisitorView.swift */; };
+		F89C08981D0E3E0600CD47B7 /* VisitorView.xib in Resources */ = {isa = PBXBuildFile; fileRef = F89C08971D0E3E0600CD47B7 /* VisitorView.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -44,6 +47,9 @@
 		F89C088B1D0D623100CD47B7 /* Null.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Null.storyboard; sourceTree = "<group>"; };
 		F89C088D1D0D62F200CD47B7 /* NullViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NullViewController.swift; sourceTree = "<group>"; };
 		F89C088F1D0D752800CD47B7 /* UIButton+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIButton+Extension.swift"; sourceTree = "<group>"; };
+		F89C08911D0E3BAE00CD47B7 /* CommonTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CommonTableViewController.swift; sourceTree = "<group>"; };
+		F89C08951D0E3DF300CD47B7 /* VisitorView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VisitorView.swift; sourceTree = "<group>"; };
+		F89C08971D0E3E0600CD47B7 /* VisitorView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = VisitorView.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -121,6 +127,9 @@
 				F89C08861D0C3DB400CD47B7 /* Resource */,
 				F89997871D0AC579002A65E0 /* MainViewController.swift */,
 				F89997AA1D0C33BA002A65E0 /* Main.storyboard */,
+				F89C08911D0E3BAE00CD47B7 /* CommonTableViewController.swift */,
+				F89C08951D0E3DF300CD47B7 /* VisitorView.swift */,
+				F89C08971D0E3E0600CD47B7 /* VisitorView.xib */,
 			);
 			path = Main;
 			sourceTree = "<group>";
@@ -228,6 +237,7 @@
 				F89997B31D0C3585002A65E0 /* Message.storyboard in Resources */,
 				F899976A1D0AB8DA002A65E0 /* Assets.xcassets in Resources */,
 				F89997AB1D0C33BA002A65E0 /* Main.storyboard in Resources */,
+				F89C08981D0E3E0600CD47B7 /* VisitorView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -242,8 +252,10 @@
 				F899977E1D0AC212002A65E0 /* HomeTableViewController.swift in Sources */,
 				F89997631D0AB8DA002A65E0 /* AppDelegate.swift in Sources */,
 				F89997881D0AC579002A65E0 /* MainViewController.swift in Sources */,
+				F89C08931D0E3BAE00CD47B7 /* CommonTableViewController.swift in Sources */,
 				F89997821D0AC22A002A65E0 /* MessageTableViewController.swift in Sources */,
 				F89C08901D0D752800CD47B7 /* UIButton+Extension.swift in Sources */,
+				F89C08961D0E3DF300CD47B7 /* VisitorView.swift in Sources */,
 				F89997801D0AC21E002A65E0 /* DiscoverTableViewController.swift in Sources */,
 				F89C088E1D0D62F200CD47B7 /* NullViewController.swift in Sources */,
 			);
