@@ -63,9 +63,12 @@ class HomeTableViewController: CommonTableViewController {
     }
     
     @objc private func rightClick()
-    {
-        QHCLog("rightclick")
-    
+    {        
+        let qrCodeControllerSB = UIStoryboard(name: "QRCodeViewController", bundle: nil)
+        let qrCodeController = qrCodeControllerSB.instantiateInitialViewController()!
+        presentViewController(qrCodeController, animated: true
+            , completion: nil)
+        
     }
     
     @objc private func titleViewClick(titleBtn: UIButton)
