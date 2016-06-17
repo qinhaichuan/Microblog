@@ -36,6 +36,7 @@
 		F8DCFF6B1D137F60006709BD /* QRCodeViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F8DCFF6A1D137F60006709BD /* QRCodeViewController.storyboard */; };
 		F8DCFF6D1D137F7B006709BD /* QRCodeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8DCFF6C1D137F7B006709BD /* QRCodeViewController.swift */; };
 		F8DCFF6F1D140C8C006709BD /* QRCodeCreatViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8DCFF6E1D140C8C006709BD /* QRCodeCreatViewController.swift */; };
+		F8DCFF711D141237006709BD /* QRResultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8DCFF701D141237006709BD /* QRResultViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -70,6 +71,7 @@
 		F8DCFF6A1D137F60006709BD /* QRCodeViewController.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = QRCodeViewController.storyboard; sourceTree = "<group>"; };
 		F8DCFF6C1D137F7B006709BD /* QRCodeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QRCodeViewController.swift; sourceTree = "<group>"; };
 		F8DCFF6E1D140C8C006709BD /* QRCodeCreatViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QRCodeCreatViewController.swift; sourceTree = "<group>"; };
+		F8DCFF701D141237006709BD /* QRResultViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QRResultViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -209,9 +211,10 @@
 		F8DCFF691D137F3E006709BD /* QRCode */ = {
 			isa = PBXGroup;
 			children = (
-				F8DCFF6C1D137F7B006709BD /* QRCodeViewController.swift */,
 				F8DCFF6A1D137F60006709BD /* QRCodeViewController.storyboard */,
+				F8DCFF6C1D137F7B006709BD /* QRCodeViewController.swift */,
 				F8DCFF6E1D140C8C006709BD /* QRCodeCreatViewController.swift */,
+				F8DCFF701D141237006709BD /* QRResultViewController.swift */,
 			);
 			path = QRCode;
 			sourceTree = "<group>";
@@ -306,6 +309,7 @@
 				F89C08931D0E3BAE00CD47B7 /* CommonTableViewController.swift in Sources */,
 				F89997821D0AC22A002A65E0 /* MessageTableViewController.swift in Sources */,
 				F89C08901D0D752800CD47B7 /* UIButton+Extension.swift in Sources */,
+				F8DCFF711D141237006709BD /* QRResultViewController.swift in Sources */,
 				F89C08A51D0EA26D00CD47B7 /* TitlePresentationController.swift in Sources */,
 				F89C08A21D0EA24A00CD47B7 /* PopViewController.swift in Sources */,
 				F89C08961D0E3DF300CD47B7 /* VisitorView.swift in Sources */,

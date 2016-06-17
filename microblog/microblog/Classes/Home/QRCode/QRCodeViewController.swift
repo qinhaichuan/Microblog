@@ -137,7 +137,7 @@ class QRCodeViewController: UIViewController {
 
 }
 
-// MARK: ------ AVCaptureMetadataOutputObjectsDelegate
+// MARK: ------ UIImagePickerControllerDelegate
 extension QRCodeViewController: UIImagePickerControllerDelegate, UINavigationControllerDelegate {
 
     // 只要选中一张图片就会调用此方法
@@ -182,6 +182,16 @@ extension QRCodeViewController: AVCaptureMetadataOutputObjectsDelegate {
             
         }
         
+        
+        
+        // 跳转到二维码控制器
+        //        metadataObjects.last ? 跳转 : 不跳转
+//        let isPush = (metadataObjects.last != nil) ? true : false
+        let isPush = true
+        if isPush {
+            QRResultViewController().resultString = resultLbl.text!
+            navigationController?.pushViewController(QRResultViewController(), animated: true)
+        }
         
     }
     
