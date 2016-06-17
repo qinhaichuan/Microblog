@@ -35,6 +35,7 @@
 		F89C08AB1D0ECCDE00CD47B7 /* CommonFile.swift in Sources */ = {isa = PBXBuildFile; fileRef = F89C08AA1D0ECCDE00CD47B7 /* CommonFile.swift */; };
 		F8DCFF6B1D137F60006709BD /* QRCodeViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F8DCFF6A1D137F60006709BD /* QRCodeViewController.storyboard */; };
 		F8DCFF6D1D137F7B006709BD /* QRCodeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8DCFF6C1D137F7B006709BD /* QRCodeViewController.swift */; };
+		F8DCFF6F1D140C8C006709BD /* QRCodeCreatViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8DCFF6E1D140C8C006709BD /* QRCodeCreatViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -68,6 +69,7 @@
 		F89C08AA1D0ECCDE00CD47B7 /* CommonFile.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CommonFile.swift; sourceTree = "<group>"; };
 		F8DCFF6A1D137F60006709BD /* QRCodeViewController.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = QRCodeViewController.storyboard; sourceTree = "<group>"; };
 		F8DCFF6C1D137F7B006709BD /* QRCodeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QRCodeViewController.swift; sourceTree = "<group>"; };
+		F8DCFF6E1D140C8C006709BD /* QRCodeCreatViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QRCodeCreatViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -209,6 +211,7 @@
 			children = (
 				F8DCFF6C1D137F7B006709BD /* QRCodeViewController.swift */,
 				F8DCFF6A1D137F60006709BD /* QRCodeViewController.storyboard */,
+				F8DCFF6E1D140C8C006709BD /* QRCodeCreatViewController.swift */,
 			);
 			path = QRCode;
 			sourceTree = "<group>";
@@ -307,6 +310,7 @@
 				F89C08A21D0EA24A00CD47B7 /* PopViewController.swift in Sources */,
 				F89C08961D0E3DF300CD47B7 /* VisitorView.swift in Sources */,
 				F89997801D0AC21E002A65E0 /* DiscoverTableViewController.swift in Sources */,
+				F8DCFF6F1D140C8C006709BD /* QRCodeCreatViewController.swift in Sources */,
 				F89C089E1D0E964C00CD47B7 /* TitleButton.swift in Sources */,
 				F89C088E1D0D62F200CD47B7 /* NullViewController.swift in Sources */,
 				F89C08A91D0EBE4000CD47B7 /* PresentationController.swift in Sources */,

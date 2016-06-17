@@ -34,7 +34,7 @@
                                         <rect key="frame" x="0.0" y="0.0" width="300" height="300"/>
                                     </imageView>
                                 </subviews>
-                                <color key="backgroundColor" red="0.0" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 <constraints>
                                     <constraint firstAttribute="trailing" secondItem="RIe-gv-bYZ" secondAttribute="trailing" id="2q0-ad-2TN"/>
                                     <constraint firstItem="Ds1-Qr-Kjl" firstAttribute="top" secondItem="tS4-3L-jdc" secondAttribute="top" id="8cf-HL-u9S"/>
@@ -48,13 +48,33 @@
                                     <constraint firstAttribute="height" constant="300" id="r35-MK-GPi"/>
                                 </constraints>
                             </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="将二维码/条形码放入框中进行扫描" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Bka-3b-uly">
+                                <rect key="frame" x="169" y="476" width="261" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qT9-cl-wsA">
+                                <rect key="frame" x="270" y="505" width="60" height="30"/>
+                                <color key="backgroundColor" red="0.0" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="我的名片">
+                                    <color key="titleColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="creatMyQRCode:" destination="jsR-Gf-pjd" eventType="touchUpInside" id="r2m-xA-xLI"/>
+                                </connections>
+                            </button>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstItem="Bka-3b-uly" firstAttribute="centerX" secondItem="aqY-re-v7z" secondAttribute="centerX" id="2dR-cY-7A5"/>
                             <constraint firstAttribute="trailing" secondItem="geV-3m-QmX" secondAttribute="trailing" id="B5U-Z8-fLJ"/>
+                            <constraint firstItem="qT9-cl-wsA" firstAttribute="top" secondItem="Bka-3b-uly" secondAttribute="bottom" constant="8" id="Fy3-uY-eWl"/>
                             <constraint firstItem="tS4-3L-jdc" firstAttribute="centerY" secondItem="aqY-re-v7z" secondAttribute="centerY" id="IE1-QM-WGs"/>
                             <constraint firstItem="geV-3m-QmX" firstAttribute="leading" secondItem="aqY-re-v7z" secondAttribute="leading" id="Xt4-gF-f0Y"/>
+                            <constraint firstItem="qT9-cl-wsA" firstAttribute="centerX" secondItem="aqY-re-v7z" secondAttribute="centerX" id="g62-xO-vBo"/>
                             <constraint firstItem="XCn-bv-Zhm" firstAttribute="top" secondItem="geV-3m-QmX" secondAttribute="bottom" id="wYa-M1-ZfO"/>
+                            <constraint firstItem="Bka-3b-uly" firstAttribute="top" secondItem="tS4-3L-jdc" secondAttribute="bottom" constant="26" id="wdY-EZ-0Rp"/>
                             <constraint firstItem="tS4-3L-jdc" firstAttribute="centerX" secondItem="aqY-re-v7z" secondAttribute="centerX" id="wuL-Yk-Sm1"/>
                         </constraints>
                     </view>
@@ -64,12 +84,17 @@
                                 <action selector="closeClick:" destination="jsR-Gf-pjd" id="Nrt-jF-ua3"/>
                             </connections>
                         </barButtonItem>
-                        <barButtonItem key="rightBarButtonItem" title="相册" id="74v-k2-5Tl"/>
+                        <barButtonItem key="rightBarButtonItem" title="相册" id="74v-k2-5Tl">
+                            <connections>
+                                <action selector="openPickerVc:" destination="jsR-Gf-pjd" id="eEA-UP-nXg"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
                     <connections>
                         <outlet property="customContainView" destination="tS4-3L-jdc" id="qo8-jM-oGF"/>
                         <outlet property="customTabBar" destination="geV-3m-QmX" id="Cfl-1J-axy"/>
                         <outlet property="customViewHeight" destination="r35-MK-GPi" id="yVd-sk-k2f"/>
+                        <outlet property="resultLbl" destination="Bka-3b-uly" id="kqO-hY-jKP"/>
                         <outlet property="scanView" destination="RIe-gv-bYZ" id="57L-63-Lbg"/>
                         <outlet property="scanViewTopLayout" destination="fZw-Jv-pig" id="Oya-Ag-hLa"/>
                     </connections>
