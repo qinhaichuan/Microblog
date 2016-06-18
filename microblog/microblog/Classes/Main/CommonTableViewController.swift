@@ -11,7 +11,7 @@ import UIKit
 class CommonTableViewController: UITableViewController {
     
     // 如果已经登录就显示登录后页面
-    var isLogin: Bool = true
+    var isLogin: Bool = false
     var visitorView: VisitorView?
 
     override func loadView() {
@@ -44,8 +44,10 @@ class CommonTableViewController: UITableViewController {
     // MARK: -----  点击
     @objc private func loginClick()
     {
-        QHCLog("登录")
-    
+        let OAuthSb = UIStoryboard(name: "OAuthViewController", bundle: nil)
+        let OAuthVc = OAuthSb.instantiateInitialViewController()!
+        presentViewController(OAuthVc, animated: true, completion: nil)
+        
     }
     
     @objc private func registerClick()

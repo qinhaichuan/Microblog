@@ -11,3 +11,8 @@ import Foundation
  /// 自定义转场通知
 let QHCPOPVIEWCONTROLLERPRESENTCLICK = "QHCPopViewControllerPresentClick"
 let QHCPOPVIEWCONTROLLERDISMISSCLISK = "QHCPopViewControllerDismissClick"
+
+/// 授权信息
+let WB_App_Key = "4102358945"
+let WB_App_Secret = "63cb5e14cf56f8c14f090ea7746f2482"
+let WB_Redirect_URI = "https://github.com/qinhaichuan"

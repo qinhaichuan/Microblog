@@ -37,6 +37,8 @@
 		F8DCFF6D1D137F7B006709BD /* QRCodeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8DCFF6C1D137F7B006709BD /* QRCodeViewController.swift */; };
 		F8DCFF6F1D140C8C006709BD /* QRCodeCreatViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8DCFF6E1D140C8C006709BD /* QRCodeCreatViewController.swift */; };
 		F8DCFF711D141237006709BD /* QRResultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8DCFF701D141237006709BD /* QRResultViewController.swift */; };
+		F8DCFF741D14F13D006709BD /* OAuthViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8DCFF731D14F13D006709BD /* OAuthViewController.swift */; };
+		F8DCFF761D14F150006709BD /* OAuthViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F8DCFF751D14F150006709BD /* OAuthViewController.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -72,6 +74,8 @@
 		F8DCFF6C1D137F7B006709BD /* QRCodeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QRCodeViewController.swift; sourceTree = "<group>"; };
 		F8DCFF6E1D140C8C006709BD /* QRCodeCreatViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QRCodeCreatViewController.swift; sourceTree = "<group>"; };
 		F8DCFF701D141237006709BD /* QRResultViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QRResultViewController.swift; sourceTree = "<group>"; };
+		F8DCFF731D14F13D006709BD /* OAuthViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OAuthViewController.swift; sourceTree = "<group>"; };
+		F8DCFF751D14F150006709BD /* OAuthViewController.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = OAuthViewController.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -115,6 +119,7 @@
 		F89997741D0AC1C2002A65E0 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				F8DCFF721D14F110006709BD /* OAuth */,
 				F89997771D0AC1C2002A65E0 /* Main */,
 				F89997761D0AC1C2002A65E0 /* Home */,
 				F89997751D0AC1C2002A65E0 /* Discover */,
@@ -219,6 +224,15 @@
 			path = QRCode;
 			sourceTree = "<group>";
 		};
+		F8DCFF721D14F110006709BD /* OAuth */ = {
+			isa = PBXGroup;
+			children = (
+				F8DCFF731D14F13D006709BD /* OAuthViewController.swift */,
+				F8DCFF751D14F150006709BD /* OAuthViewController.storyboard */,
+			);
+			path = OAuth;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -287,6 +301,7 @@
 				F899976A1D0AB8DA002A65E0 /* Assets.xcassets in Resources */,
 				F89997AB1D0C33BA002A65E0 /* Main.storyboard in Resources */,
 				F89C08A71D0EA97D00CD47B7 /* PopViewController.storyboard in Resources */,
+				F8DCFF761D14F150006709BD /* OAuthViewController.storyboard in Resources */,
 				F8DCFF6B1D137F60006709BD /* QRCodeViewController.storyboard in Resources */,
 				F89C08981D0E3E0600CD47B7 /* VisitorView.xib in Resources */,
 			);
@@ -303,6 +318,7 @@
 				F899977E1D0AC212002A65E0 /* HomeTableViewController.swift in Sources */,
 				F89997631D0AB8DA002A65E0 /* AppDelegate.swift in Sources */,
 				F8DCFF6D1D137F7B006709BD /* QRCodeViewController.swift in Sources */,
+				F8DCFF741D14F13D006709BD /* OAuthViewController.swift in Sources */,
 				F89C089C1D0E8E9200CD47B7 /* UIBarButtonItem + Extension.swift in Sources */,
 				F89C08AB1D0ECCDE00CD47B7 /* CommonFile.swift in Sources */,
 				F89997881D0AC579002A65E0 /* MainViewController.swift in Sources */,
