@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F86609661D152DE70003DD5A /* NetRequestManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F86609651D152DE70003DD5A /* NetRequestManager.swift */; };
+		F86609681D1548DA0003DD5A /* String+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = F86609671D1548DA0003DD5A /* String+Extension.swift */; };
+		F866096A1D154C820003DD5A /* UserAccount.swift in Sources */ = {isa = PBXBuildFile; fileRef = F86609691D154C820003DD5A /* UserAccount.swift */; };
 		F89997631D0AB8DA002A65E0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F89997621D0AB8DA002A65E0 /* AppDelegate.swift */; };
 		F899976A1D0AB8DA002A65E0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F89997691D0AB8DA002A65E0 /* Assets.xcassets */; };
 		F899977E1D0AC212002A65E0 /* HomeTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F899977D1D0AC212002A65E0 /* HomeTableViewController.swift */; };
@@ -39,9 +42,16 @@
 		F8DCFF711D141237006709BD /* QRResultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8DCFF701D141237006709BD /* QRResultViewController.swift */; };
 		F8DCFF741D14F13D006709BD /* OAuthViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8DCFF731D14F13D006709BD /* OAuthViewController.swift */; };
 		F8DCFF761D14F150006709BD /* OAuthViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F8DCFF751D14F150006709BD /* OAuthViewController.storyboard */; };
+		FB9444D7904A873C2952BA3A /* Pods_microblog.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6F5669E7FCA3F5E5D858DCF8 /* Pods_microblog.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		6F5669E7FCA3F5E5D858DCF8 /* Pods_microblog.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_microblog.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		BF1ECEB0D3006ECA87AA5DD5 /* Pods-microblog.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-microblog.release.xcconfig"; path = "Pods/Target Support Files/Pods-microblog/Pods-microblog.release.xcconfig"; sourceTree = "<group>"; };
+		CD9684E884C8E67C05719B7F /* Pods-microblog.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-microblog.debug.xcconfig"; path = "Pods/Target Support Files/Pods-microblog/Pods-microblog.debug.xcconfig"; sourceTree = "<group>"; };
+		F86609651D152DE70003DD5A /* NetRequestManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetRequestManager.swift; sourceTree = "<group>"; };
+		F86609671D1548DA0003DD5A /* String+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "String+Extension.swift"; sourceTree = "<group>"; };
+		F86609691D154C820003DD5A /* UserAccount.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserAccount.swift; sourceTree = "<group>"; };
 		F899975F1D0AB8DA002A65E0 /* microblog.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = microblog.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F89997621D0AB8DA002A65E0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F89997691D0AB8DA002A65E0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -83,17 +93,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FB9444D7904A873C2952BA3A /* Pods_microblog.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		43E8363775FFAE247FAC0B77 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				6F5669E7FCA3F5E5D858DCF8 /* Pods_microblog.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		C7663CA7523995A43243EF5D /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				CD9684E884C8E67C05719B7F /* Pods-microblog.debug.xcconfig */,
+				BF1ECEB0D3006ECA87AA5DD5 /* Pods-microblog.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		F89997561D0AB8DA002A65E0 = {
 			isa = PBXGroup;
 			children = (
 				F89997611D0AB8DA002A65E0 /* microblog */,
 				F89997601D0AB8DA002A65E0 /* Products */,
+				C7663CA7523995A43243EF5D /* Pods */,
+				43E8363775FFAE247FAC0B77 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -188,6 +218,8 @@
 				F89C089B1D0E8E9200CD47B7 /* UIBarButtonItem + Extension.swift */,
 				F89C089D1D0E964C00CD47B7 /* TitleButton.swift */,
 				F89C08AA1D0ECCDE00CD47B7 /* CommonFile.swift */,
+				F86609651D152DE70003DD5A /* NetRequestManager.swift */,
+				F86609671D1548DA0003DD5A /* String+Extension.swift */,
 			);
 			path = Tools;
 			sourceTree = "<group>";
@@ -227,8 +259,9 @@
 		F8DCFF721D14F110006709BD /* OAuth */ = {
 			isa = PBXGroup;
 			children = (
-				F8DCFF731D14F13D006709BD /* OAuthViewController.swift */,
 				F8DCFF751D14F150006709BD /* OAuthViewController.storyboard */,
+				F8DCFF731D14F13D006709BD /* OAuthViewController.swift */,
+				F86609691D154C820003DD5A /* UserAccount.swift */,
 			);
 			path = OAuth;
 			sourceTree = "<group>";
@@ -240,9 +273,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = F89997711D0AB8DA002A65E0 /* Build configuration list for PBXNativeTarget "microblog" */;
 			buildPhases = (
+				BD16D3AEEC998F4AC22A9499 /* 📦 Check Pods Manifest.lock */,
 				F899975B1D0AB8DA002A65E0 /* Sources */,
 				F899975C1D0AB8DA002A65E0 /* Frameworks */,
 				F899975D1D0AB8DA002A65E0 /* Resources */,
+				19FC9CFE2AD0D2570F499ED1 /* 📦 Embed Pods Frameworks */,
+				9F41AB1D183A5FE2CC033EC9 /* 📦 Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -309,6 +345,54 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		19FC9CFE2AD0D2570F499ED1 /* 📦 Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-microblog/Pods-microblog-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9F41AB1D183A5FE2CC033EC9 /* 📦 Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-microblog/Pods-microblog-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BD16D3AEEC998F4AC22A9499 /* 📦 Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		F899975B1D0AB8DA002A65E0 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -318,13 +402,16 @@
 				F899977E1D0AC212002A65E0 /* HomeTableViewController.swift in Sources */,
 				F89997631D0AB8DA002A65E0 /* AppDelegate.swift in Sources */,
 				F8DCFF6D1D137F7B006709BD /* QRCodeViewController.swift in Sources */,
+				F86609661D152DE70003DD5A /* NetRequestManager.swift in Sources */,
 				F8DCFF741D14F13D006709BD /* OAuthViewController.swift in Sources */,
 				F89C089C1D0E8E9200CD47B7 /* UIBarButtonItem + Extension.swift in Sources */,
+				F866096A1D154C820003DD5A /* UserAccount.swift in Sources */,
 				F89C08AB1D0ECCDE00CD47B7 /* CommonFile.swift in Sources */,
 				F89997881D0AC579002A65E0 /* MainViewController.swift in Sources */,
 				F89C08931D0E3BAE00CD47B7 /* CommonTableViewController.swift in Sources */,
 				F89997821D0AC22A002A65E0 /* MessageTableViewController.swift in Sources */,
 				F89C08901D0D752800CD47B7 /* UIButton+Extension.swift in Sources */,
+				F86609681D1548DA0003DD5A /* String+Extension.swift in Sources */,
 				F8DCFF711D141237006709BD /* QRResultViewController.swift in Sources */,
 				F89C08A51D0EA26D00CD47B7 /* TitlePresentationController.swift in Sources */,
 				F89C08A21D0EA24A00CD47B7 /* PopViewController.swift in Sources */,
@@ -427,6 +514,7 @@
 		};
 		F89997721D0AB8DA002A65E0 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = CD9684E884C8E67C05719B7F /* Pods-microblog.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = "Brand Assets";
@@ -441,6 +529,7 @@
 		};
 		F89997731D0AB8DA002A65E0 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = BF1ECEB0D3006ECA87AA5DD5 /* Pods-microblog.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = "Brand Assets";
