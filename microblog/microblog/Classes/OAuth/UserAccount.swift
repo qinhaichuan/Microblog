@@ -14,8 +14,16 @@ class UserAccount: NSObject, NSCoding {
     var access_token: String?
     /// access_token的生命周期，单位是秒数。
     var expires_in: NSNumber?
+        {
+        didSet{
+            expires_Date = NSDate(timeIntervalSinceNow: expires_in!.doubleValue)
+        }
+    }
+    
     /// 当前授权用户的UID。
     var uid: String?
+    /// 过期时间
+    var expires_Date: NSDate?
     
     static var userAccount: UserAccount?
     
@@ -54,9 +62,17 @@ class UserAccount: NSObject, NSCoding {
         if userAccount != nil {
             return userAccount!
         }
-        
+        QHCLog("从文件中取出")
         // 如果没有就取出
         userAccount = NSKeyedUnarchiver.unarchiveObjectWithFile(UserAccount.filePath) as? UserAccount
+        
+        // 把刚登录时的时间取出了, 对比是否过期
+        guard let date = userAccount?.expires_Date where date.compare(NSDate()) == NSComparisonResult.OrderedDescending else {
+            QHCLog("已经过期\(userAccount)")
+            userAccount = nil
+            return userAccount!
+        }
+        
         
         return userAccount!
     }
@@ -71,6 +87,7 @@ class UserAccount: NSObject, NSCoding {
         aCoder.encodeObject(access_token, forKey: "access_token")
         aCoder.encodeObject(expires_in, forKey: "expires_in")
         aCoder.encodeObject(uid, forKey: "uid")
+        aCoder.encodeObject(expires_Date, forKey: "expires_Date")
     }
     
     /**
@@ -80,6 +97,7 @@ class UserAccount: NSObject, NSCoding {
         access_token = aDecoder.decodeObjectForKey("access_token") as? String
         expires_in = aDecoder.decodeObjectForKey("expires_in") as? NSNumber
         uid = aDecoder.decodeObjectForKey("uid") as? String
+        expires_Date = aDecoder.decodeObjectForKey("expires_Date") as? NSDate
     }
     
     
