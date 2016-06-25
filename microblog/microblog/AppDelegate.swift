@@ -19,12 +19,14 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         UITabBar.appearance().tintColor = UIColor.orangeColor()
         UINavigationBar.appearance().tintColor = UIColor.orangeColor()
         
-       /*
+       
         window = UIWindow(frame: UIScreen.mainScreen().bounds)
         window?.backgroundColor = UIColor.whiteColor()
-        window?.rootViewController = MainViewController()
+        let mainSB = UIStoryboard(name: "NewFeaturesViewController", bundle: nil)
+        let vc = mainSB.instantiateInitialViewController()
+        window?.rootViewController = vc
         window?.makeKeyAndVisible()
-       */
+ 
         
         return true
     }

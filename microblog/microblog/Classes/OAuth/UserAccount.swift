@@ -17,6 +17,7 @@ class UserAccount: NSObject, NSCoding {
         {
         didSet{
             expires_Date = NSDate(timeIntervalSinceNow: expires_in!.doubleValue)
+            QHCLog("生命周期\(expires_Date)")
         }
     }
     
@@ -46,7 +47,7 @@ class UserAccount: NSObject, NSCoding {
     
     // MARK: -----  保存模型到文件中
     
-    static let filePath = "userAccount.plsit".cacheDirectory()
+    static let filePath = "userAccount.plist".cacheDirectory()
     /**
      *  保存模型
      */
@@ -57,7 +58,7 @@ class UserAccount: NSObject, NSCoding {
     /**
      *  取出模型
      */
-    class func getUserAccount() -> UserAccount {
+    class func getUserAccount() -> UserAccount? {
     
         if userAccount != nil {
             return userAccount!
@@ -70,13 +71,19 @@ class UserAccount: NSObject, NSCoding {
         guard let date = userAccount?.expires_Date where date.compare(NSDate()) == NSComparisonResult.OrderedDescending else {
             QHCLog("已经过期\(userAccount)")
             userAccount = nil
-            return userAccount!
+            return userAccount
         }
         
         
         return userAccount!
     }
     
+    /**
+     *  判断是否登录
+     */
+    class func login() -> Bool {
+        return getUserAccount() != nil
+    }
     
     // MARK: -----  NSCoding
     

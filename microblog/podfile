@@ -1,7 +1,9 @@
 use_frameworks!
-platform :ios, '7.0'
+platform :ios, ‘8.0’
 target "microblog” do 
 
 pod 'AFNetworking', '~> 3.1.0'
+pod 'SnapKit', '~> 0.30.0.beta1'
+pod 'SDWebImage', '~> 3.7.6'
 
 end

@@ -7,6 +7,7 @@
 //
 
 import Foundation
+import SnapKit
 
  /// 自定义转场通知
 let QHCPOPVIEWCONTROLLERPRESENTCLICK = "QHCPopViewControllerPresentClick"

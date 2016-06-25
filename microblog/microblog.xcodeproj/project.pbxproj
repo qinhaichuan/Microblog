@@ -10,6 +10,8 @@
 		F86609661D152DE70003DD5A /* NetRequestManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F86609651D152DE70003DD5A /* NetRequestManager.swift */; };
 		F86609681D1548DA0003DD5A /* String+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = F86609671D1548DA0003DD5A /* String+Extension.swift */; };
 		F866096A1D154C820003DD5A /* UserAccount.swift in Sources */ = {isa = PBXBuildFile; fileRef = F86609691D154C820003DD5A /* UserAccount.swift */; };
+		F87358031D1E7C8000C18FC0 /* NewFeaturesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F87358021D1E7C8000C18FC0 /* NewFeaturesViewController.swift */; };
+		F87358051D1E7C8900C18FC0 /* NewFeaturesViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F87358041D1E7C8900C18FC0 /* NewFeaturesViewController.storyboard */; };
 		F89997631D0AB8DA002A65E0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F89997621D0AB8DA002A65E0 /* AppDelegate.swift */; };
 		F899976A1D0AB8DA002A65E0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F89997691D0AB8DA002A65E0 /* Assets.xcassets */; };
 		F899977E1D0AC212002A65E0 /* HomeTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F899977D1D0AC212002A65E0 /* HomeTableViewController.swift */; };
@@ -52,6 +54,8 @@
 		F86609651D152DE70003DD5A /* NetRequestManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetRequestManager.swift; sourceTree = "<group>"; };
 		F86609671D1548DA0003DD5A /* String+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "String+Extension.swift"; sourceTree = "<group>"; };
 		F86609691D154C820003DD5A /* UserAccount.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserAccount.swift; sourceTree = "<group>"; };
+		F87358021D1E7C8000C18FC0 /* NewFeaturesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewFeaturesViewController.swift; sourceTree = "<group>"; };
+		F87358041D1E7C8900C18FC0 /* NewFeaturesViewController.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = NewFeaturesViewController.storyboard; sourceTree = "<group>"; };
 		F899975F1D0AB8DA002A65E0 /* microblog.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = microblog.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F89997621D0AB8DA002A65E0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F89997691D0AB8DA002A65E0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -117,6 +121,15 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
+		F87358011D1E7C5500C18FC0 /* NewFeatures */ = {
+			isa = PBXGroup;
+			children = (
+				F87358021D1E7C8000C18FC0 /* NewFeaturesViewController.swift */,
+				F87358041D1E7C8900C18FC0 /* NewFeaturesViewController.storyboard */,
+			);
+			path = NewFeatures;
+			sourceTree = "<group>";
+		};
 		F89997561D0AB8DA002A65E0 = {
 			isa = PBXGroup;
 			children = (
@@ -149,6 +162,7 @@
 		F89997741D0AC1C2002A65E0 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				F87358011D1E7C5500C18FC0 /* NewFeatures */,
 				F8DCFF721D14F110006709BD /* OAuth */,
 				F89997771D0AC1C2002A65E0 /* Main */,
 				F89997761D0AC1C2002A65E0 /* Home */,
@@ -337,6 +351,7 @@
 				F899976A1D0AB8DA002A65E0 /* Assets.xcassets in Resources */,
 				F89997AB1D0C33BA002A65E0 /* Main.storyboard in Resources */,
 				F89C08A71D0EA97D00CD47B7 /* PopViewController.storyboard in Resources */,
+				F87358051D1E7C8900C18FC0 /* NewFeaturesViewController.storyboard in Resources */,
 				F8DCFF761D14F150006709BD /* OAuthViewController.storyboard in Resources */,
 				F8DCFF6B1D137F60006709BD /* QRCodeViewController.storyboard in Resources */,
 				F89C08981D0E3E0600CD47B7 /* VisitorView.xib in Resources */,
@@ -400,6 +415,7 @@
 			files = (
 				F89997841D0AC239002A65E0 /* ProfileTableViewController.swift in Sources */,
 				F899977E1D0AC212002A65E0 /* HomeTableViewController.swift in Sources */,
+				F87358031D1E7C8000C18FC0 /* NewFeaturesViewController.swift in Sources */,
 				F89997631D0AB8DA002A65E0 /* AppDelegate.swift in Sources */,
 				F8DCFF6D1D137F7B006709BD /* QRCodeViewController.swift in Sources */,
 				F86609661D152DE70003DD5A /* NetRequestManager.swift in Sources */,

@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="LN5-a5-yC0">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <scenes>
+        <!--New Features View Controller-->
+        <scene sceneID="1Oz-PT-Ecq">
+            <objects>
+                <viewController id="LN5-a5-yC0" customClass="NewFeaturesViewController" customModule="microblog" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Zui-ki-Del"/>
+                        <viewControllerLayoutGuide type="bottom" id="pzl-x5-bY0"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="r0g-oe-TAy">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="S7o-E3-GFc">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="waT-pJ-cjI" customClass="NewFeaturesFlowLayout" customModule="microblog" customModuleProvider="target">
+                                    <size key="itemSize" width="50" height="50"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="newFeaturesCell" id="vT3-v7-Yfu" customClass="NewFeaturesCollectionCell" customModule="microblog" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                                            <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        </view>
+                                    </collectionViewCell>
+                                </cells>
+                                <connections>
+                                    <outlet property="dataSource" destination="LN5-a5-yC0" id="kWD-oX-EO7"/>
+                                    <outlet property="delegate" destination="LN5-a5-yC0" id="eDf-4r-Hbn"/>
+                                </connections>
+                            </collectionView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="S7o-E3-GFc" secondAttribute="trailing" id="GYH-Px-zyV"/>
+                            <constraint firstItem="S7o-E3-GFc" firstAttribute="leading" secondItem="r0g-oe-TAy" secondAttribute="leading" id="IWW-Oa-GIh"/>
+                            <constraint firstItem="pzl-x5-bY0" firstAttribute="top" secondItem="S7o-E3-GFc" secondAttribute="bottom" id="Olp-3g-wkp"/>
+                            <constraint firstItem="S7o-E3-GFc" firstAttribute="top" secondItem="r0g-oe-TAy" secondAttribute="top" id="hc0-EH-lrc"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="UZQ-iM-aKP" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="519" y="379"/>
+        </scene>
+    </scenes>
+</document>

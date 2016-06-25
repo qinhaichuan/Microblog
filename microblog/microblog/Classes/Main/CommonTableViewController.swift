@@ -11,7 +11,7 @@ import UIKit
 class CommonTableViewController: UITableViewController {
     
     // 如果已经登录就显示登录后页面
-    var isLogin: Bool = false
+    var isLogin: Bool = UserAccount.login()
     var visitorView: VisitorView?
 
     override func loadView() {
