@@ -12,6 +12,8 @@
 		F866096A1D154C820003DD5A /* UserAccount.swift in Sources */ = {isa = PBXBuildFile; fileRef = F86609691D154C820003DD5A /* UserAccount.swift */; };
 		F87358031D1E7C8000C18FC0 /* NewFeaturesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F87358021D1E7C8000C18FC0 /* NewFeaturesViewController.swift */; };
 		F87358051D1E7C8900C18FC0 /* NewFeaturesViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F87358041D1E7C8900C18FC0 /* NewFeaturesViewController.storyboard */; };
+		F8823FC31D1E94DB0096E83F /* WelcomeViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F8823FC21D1E94DB0096E83F /* WelcomeViewController.storyboard */; };
+		F8823FC51D1E94EB0096E83F /* WelcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8823FC41D1E94EB0096E83F /* WelcomeViewController.swift */; };
 		F89997631D0AB8DA002A65E0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F89997621D0AB8DA002A65E0 /* AppDelegate.swift */; };
 		F899976A1D0AB8DA002A65E0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F89997691D0AB8DA002A65E0 /* Assets.xcassets */; };
 		F899977E1D0AC212002A65E0 /* HomeTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F899977D1D0AC212002A65E0 /* HomeTableViewController.swift */; };
@@ -56,6 +58,8 @@
 		F86609691D154C820003DD5A /* UserAccount.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserAccount.swift; sourceTree = "<group>"; };
 		F87358021D1E7C8000C18FC0 /* NewFeaturesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewFeaturesViewController.swift; sourceTree = "<group>"; };
 		F87358041D1E7C8900C18FC0 /* NewFeaturesViewController.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = NewFeaturesViewController.storyboard; sourceTree = "<group>"; };
+		F8823FC21D1E94DB0096E83F /* WelcomeViewController.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = WelcomeViewController.storyboard; sourceTree = "<group>"; };
+		F8823FC41D1E94EB0096E83F /* WelcomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WelcomeViewController.swift; sourceTree = "<group>"; };
 		F899975F1D0AB8DA002A65E0 /* microblog.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = microblog.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F89997621D0AB8DA002A65E0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F89997691D0AB8DA002A65E0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -126,6 +130,8 @@
 			children = (
 				F87358021D1E7C8000C18FC0 /* NewFeaturesViewController.swift */,
 				F87358041D1E7C8900C18FC0 /* NewFeaturesViewController.storyboard */,
+				F8823FC41D1E94EB0096E83F /* WelcomeViewController.swift */,
+				F8823FC21D1E94DB0096E83F /* WelcomeViewController.storyboard */,
 			);
 			path = NewFeatures;
 			sourceTree = "<group>";
@@ -354,6 +360,7 @@
 				F87358051D1E7C8900C18FC0 /* NewFeaturesViewController.storyboard in Resources */,
 				F8DCFF761D14F150006709BD /* OAuthViewController.storyboard in Resources */,
 				F8DCFF6B1D137F60006709BD /* QRCodeViewController.storyboard in Resources */,
+				F8823FC31D1E94DB0096E83F /* WelcomeViewController.storyboard in Resources */,
 				F89C08981D0E3E0600CD47B7 /* VisitorView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -419,6 +426,7 @@
 				F89997631D0AB8DA002A65E0 /* AppDelegate.swift in Sources */,
 				F8DCFF6D1D137F7B006709BD /* QRCodeViewController.swift in Sources */,
 				F86609661D152DE70003DD5A /* NetRequestManager.swift in Sources */,
+				F8823FC51D1E94EB0096E83F /* WelcomeViewController.swift in Sources */,
 				F8DCFF741D14F13D006709BD /* OAuthViewController.swift in Sources */,
 				F89C089C1D0E8E9200CD47B7 /* UIBarButtonItem + Extension.swift in Sources */,
 				F866096A1D154C820003DD5A /* UserAccount.swift in Sources */,

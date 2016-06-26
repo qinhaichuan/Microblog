@@ -22,7 +22,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
        
         window = UIWindow(frame: UIScreen.mainScreen().bounds)
         window?.backgroundColor = UIColor.whiteColor()
-        let mainSB = UIStoryboard(name: "NewFeaturesViewController", bundle: nil)
+        let mainSB = UIStoryboard(name: "WelcomeViewController", bundle: nil)
         let vc = mainSB.instantiateInitialViewController()
         window?.rootViewController = vc
         window?.makeKeyAndVisible()
